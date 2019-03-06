@@ -3,8 +3,8 @@
 
 
 # Make necessary imports
-from itertools import chain
 import datetime
+from itertools import chain
 from pyspark import SparkContext
 from pyspark.sql import HiveContext
 from pyspark.sql.functions import create_map, lit, max
@@ -50,5 +50,5 @@ drop_off_data_feed = unique_searches_df. \
 		drop(unique_searches_df.conversion_likeliness). \
 		withColumnRenamed("page_name", "dropoff_page")
 
-# Save the data feed back to a data store. Here, we are saving it in a different table in hive. 
+# Save the data feed back to a data store. Here, the data is getting saved in a hive table.
 drop_off_data_feed.write.mode('overwrite').saveAsTable("drop_off_data_feed")
