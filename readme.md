@@ -15,7 +15,7 @@ aws emr create-cluster --name="HiveExample" --release-label emr-5.21.0 \
 --profile=development
 ```
 
-### Step 2. Create `funnel_clickstreams` table in hive. This will store clickstream. 
+### Step 2. Create `funnel_clickstreams` table in hive. This will store the clickstream. 
 ------
 ```
 CREATE TABLE IF NOT EXISTS funnel_clickstreams ( 
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS funnel_clickstreams (
 );
 ```
 
-### Step 3. Add sample data to the table created in the previous step
+### Step 3. Add sample data to the table created in the previous step.
 ------
 ```
 INSERT INTO funnel_clickstreams VALUES
