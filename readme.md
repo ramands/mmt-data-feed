@@ -1,6 +1,7 @@
 # MMT Assignment (Data Feed for Drop-off Notifications)
 
 NOTE: Please let me know once this assignment is checked, I will make it private after that. 
+[Click here](https://github.com/ramands/mmt-data-feed/blob/master/dropoff_data_feed.py) to check the code.
 
 ### Step 1: Create an EMR Cluster with Hive, Spark, and Zepplin.
 ------
